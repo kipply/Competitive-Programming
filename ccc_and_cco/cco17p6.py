@@ -1,5 +1,6 @@
 # down, right, up, left will cause three pieces to cycle like a PLL Algorithm!
 # Please don't try to read this code :(
+# Also note that this probably isn't an official solution, as it only barely passes in Pypy (It usually does not pass)
 from sys import stdin
 def YOUDIDSOMETHING(xxx, k):
     xxx += 1
