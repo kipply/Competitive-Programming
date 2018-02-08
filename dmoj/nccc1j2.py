@@ -1,11 +1,1 @@
-s = raw_input()
-
-def palindrome_substrings(string):
-    return (i for i in (string[i:j+1] for i in range(len(string)) for j in range(i, len(string))) if i == i[::-1])
-
-ans = "Odd"
-for p in list(palindrome_substrings(s)):
-    if len(p) % 2 == 0:
-        ans = "Even"
-        break
-print ans
+print(lambda n:("Odd" if all(len(sub) % 2 for sub in list(i for i in (n[i:j+1] for i in range(len(n)) for j in range(i, len(n))) if i == i[::-1])) else "Even"))(raw_input())
