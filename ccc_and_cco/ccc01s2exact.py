@@ -54,4 +54,4 @@ for oops in range(t):
         if len(" ".join(row).rstrip()) < m:
             reeee = " " * (m - len(" ".join(row).rstrip()))
         print " ".join(row).rstrip() + reeee
-    if not oops == t - 1: print"\n"
+    if not oops == t - 1: print""
