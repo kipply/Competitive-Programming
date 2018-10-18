@@ -90,6 +90,6 @@ for i in range(n): m.append(int(sys.stdin.readline()))
 dp[0] = 1
 m.sort()
 for i in range(len(m)): # Iterate through unique combinations of motels
-  for j in range(i + 1, len(m)):
-    if b >= m[j] - m[i] and a <= m[j] - m[i]: dp[j] += dp[i] # If you can travel from motel i to j in one day
+    for j in range(i + 1, len(m)):
+        if b >= m[j] - m[i] and a <= m[j] - m[i]: dp[j] += dp[i] # If you can travel from motel i to j in one day
 sys.stdout.write(str(dp[-1]))

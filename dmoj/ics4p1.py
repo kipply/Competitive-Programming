@@ -5,6 +5,6 @@ a = raw_input()
 a = [x for x in permutations(a)]
 a.sort()
 for i in a:
-  for j in i:
-    sys.stdout.write(j)
-  print("")
+    for j in i:
+        sys.stdout.write(j)
+    print("")

@@ -3,6 +3,6 @@ c, d = map(int, input().split())
 t = int(input())
 distance = abs(a - c) + abs(b - d)
 if distance <= t and not ((t - distance) % 2):
-  print("Y")
+    print("Y")
 else:
-  print("N")
+    print("N")

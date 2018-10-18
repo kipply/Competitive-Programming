@@ -1,10 +1,10 @@
 a = raw_input()
 f = True
 for l in a:
-  if l not in list("IOSHZXN"):
-    f = False
-    break
+    if l not in list("IOSHZXN"):
+        f = False
+        break
 if f:
-  print("YES")
+    print("YES")
 else:
-  print("NO")
+    print("NO")

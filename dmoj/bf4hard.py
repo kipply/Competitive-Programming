@@ -20,8 +20,8 @@ def rkm(text, pattern, pr):
                     f = False
                     break
             if f:
-              res = s
-              break
+                res = s
+                break
         if s < n - m:
             t = (t - h * ord(text[s])) % pr
             t = (t * 31 + ord(text[s+m])) % pr

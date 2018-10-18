@@ -1,8 +1,8 @@
 a = input()
 a = input()
 if a.count('A') > a.count('B'):
-  print("A")
+    print("A")
 elif a.count('B') > a.count('A'):
-  print("B")
+    print("B")
 else:
-  print("Tie")
+    print("Tie")

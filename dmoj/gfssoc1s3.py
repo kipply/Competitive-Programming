@@ -30,7 +30,7 @@ for i in range(t + 1):
     while q:
         person = q.pop(0)
         if isinstance(g[person[0]][person[1]], (int, long)):
-          dist[i][g[person[0]][person[1]]] = person[2];
+            dist[i][g[person[0]][person[1]]] = person[2];
         for j in range(4):
             x2, y2 = person[0] + dr[j], person[1] + dc[j]
             if (x2 < 0 or y2 < 0 or x2 >= n or y2 >= m or v[x2][y2] or g[x2][y2] == 'X'):

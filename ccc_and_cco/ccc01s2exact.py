@@ -45,7 +45,7 @@ for oops in range(t):
                         reeeeeeee = " "
                 except: pass
             if spiral[i][j] == "":
-                    spiral[i][j] = " "
+                spiral[i][j] = " "
             if len(spiral[i][j]) == 1 and m >= 10: spiral[i][j] = reeeeeeee + spiral[i][j]
 
     for row in spiral:
