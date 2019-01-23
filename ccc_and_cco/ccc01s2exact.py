@@ -25,7 +25,6 @@ for oops in range(t):
         if spiral[r + dr[nd]][c + dc[nd]] == '':
             d = nd
 
-    # for row in spiral: print row
 
     while True:
         if all(x == '' for x in spiral[0]): spiral = spiral[1:]
@@ -34,8 +33,7 @@ for oops in range(t):
             for i in range(len(spiral)): spiral[i] = spiral[i][1:]
         else:
             break
-    #
-    # for row in spiral: print row
+
     for i in range(len(spiral)):
         for j in range(len(spiral[i])):
             reeeeeeee = ""

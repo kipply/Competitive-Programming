@@ -8,10 +8,10 @@ x, y = map(int, input().split())
 while x != 0:
     adj[x].add(y)
     x, y = map(int, input().split())
-# print(adj)
+
 dp_question_mark[1] = 1
 for brian_is_cute in range(n + 1):
-    # print(dp_question_mark)
+
     for cactus in adj[brian_is_cute]:
         dp_question_mark[cactus] += dp_question_mark[brian_is_cute]
 print(dp_question_mark[n])

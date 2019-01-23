@@ -84,7 +84,7 @@
         #               'M'HMM'M''M''HM'I'
 import sys
 a, b, n = int(sys.stdin.readline()), int(sys.stdin.readline()), int(sys.stdin.readline())
-m= [0, 990, 1010, 1970, 2030, 2940, 3060, 3930, 4060, 4970, 5030, 5990, 6010, 7000]
+m = [0, 990, 1010, 1970, 2030, 2940, 3060, 3930, 4060, 4970, 5030, 5990, 6010, 7000]
 dp = [0] * (len(m) + n) # idk does this count as dp?
 for i in range(n): m.append(int(sys.stdin.readline()))
 dp[0] = 1

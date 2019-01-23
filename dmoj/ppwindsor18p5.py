@@ -1,0 +1,1 @@
+# print("".join(map(str, [i + 1 for i in range(1000000)]))[int(input()) - 1])
