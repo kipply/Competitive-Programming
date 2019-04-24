@@ -2,19 +2,33 @@
 
 using namespace std;
 
-int x1, yy1, x2, y2, x, y; 
-
+int n, m, a[1000006], psa[1000006];
 
 int main(){
-  scanf("%d %d %d %d", &x1, &yy1, &x2, &y2); 
-  scanf("%d %d", &x, &y); 
+  scanf("%d", &n); 
 
-  string ans = "NO"; 
-
-  if ((x2-x1) % x == 0 && (y2-yy1) % y == 0 && (abs(y2-yy1)/y % 2 == abs(x2-x1)/x % 2)) {
-    ans = "YES"; 
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
   }
-  cout << ans;
+
+  psa[0] = a[0]; 
+  for (int i = 1; i < n; i++) {
+    psa[i] = a[i] + psa[i - 1]; 
+  }
+
+
+
+
+  for (int i = 0; i < n - 1; i++) {
+    cute.push_back(a[i]);
+    if (gcd(a[i], a[i + 1]) != 1) {
+      cute.push_back(1);
+      ans++; 
+    }
+  }
+
+
+
   return 0;
 }
  

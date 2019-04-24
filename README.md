@@ -6,4 +6,4 @@ Solutions are all titled by problem code, or whatever I found in the URL. For th
 
 Problems are grouped by contest or by site. My code is not necessarily easy to read, in fact it probably isn't but should give you a decent idea. I swear though, when I write software I lint and follow practices like no tomorrow. Variables named `cactus` represent a primary graph (adjacency list or tree), named after Brian Chau. Cacti are cute. 
 
-Problem count: 200
+Problem count: 315
